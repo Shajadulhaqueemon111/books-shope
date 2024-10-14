@@ -3,7 +3,7 @@ import MainRoute from "../MainRoute/MainRoute";
 import Error from "../../Pages/ErrorPage/Error";
 import Home from "../../Pages/HomePage/Home";
 import WishList from "../../Pages/WishlistPage/WishList";
-import BookPage from "../../Pages/BookPage/BookPage";
+import Books from "../../Pages/BooksPage/Books";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/book-details",
-        element: <BookPage></BookPage>,
+        element: <Books></Books>,
       },
     ],
   },

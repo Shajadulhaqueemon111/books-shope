@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { HiOutlineQueueList } from "react-icons/hi2";
+
+import { FaAlignJustify } from "react-icons/fa";
 const Navbar = () => {
-  // State to manage mobile menu visibility
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
           onClick={handleMenuToggle}
           className="md:hidden text-white focus:outline-none"
         >
-          <HiOutlineQueueList className="text-3xl font-bold"></HiOutlineQueueList>
+          <FaAlignJustify className="text-3xl font-bold"></FaAlignJustify>
         </button>
       </div>
 
