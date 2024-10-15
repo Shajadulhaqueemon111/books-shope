@@ -1,10 +1,8 @@
-import Banner from "../Banner/Banner";
-import BookPage from "../BookListPage/BookPage";
+import BookPage from "../BookListPage/BookList";
 
 const Home = () => {
   return (
     <div>
-      <Banner></Banner>
       <BookPage></BookPage>
     </div>
   );
