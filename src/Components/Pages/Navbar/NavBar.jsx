@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { FaAlignJustify } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -16,15 +17,15 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex space-x-6">
-          <a href="/" className="text-white hover:text-blue-200">
+          <Link to="/" className="text-white hover:text-blue-200">
             Home
-          </a>
-          <a href="/wishlist" className="text-white hover:text-blue-200">
+          </Link>
+          <Link to="/wishlist" className="text-white hover:text-blue-200">
             Wishlist
-          </a>
-          <a href="/book-details" className="text-white hover:text-blue-200">
+          </Link>
+          <Link to="/details" className="text-white hover:text-blue-200">
             Book
-          </a>
+          </Link>
         </div>
 
         <button
@@ -37,21 +38,21 @@ const Navbar = () => {
 
       {isMobileMenuOpen && (
         <div className="md:hidden mt-4">
-          <a href="/" className="block text-white py-2 px-4 hover:bg-blue-600">
+          <Link to="/" className="block text-white py-2 px-4 hover:bg-blue-600">
             Home
-          </a>
-          <a
-            href="/wishlist"
+          </Link>
+          <Link
+            to="/wishlist"
             className="block text-white py-2 px-4 hover:bg-blue-600"
           >
             Wishlist
-          </a>
-          <a
-            href="/book-details"
+          </Link>
+          <Link
+            to="/details"
             className="block text-white py-2 px-4 hover:bg-blue-600"
           >
             Book
-          </a>
+          </Link>
         </div>
       )}
     </nav>
